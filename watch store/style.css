@@ -1,11 +1,10 @@
-
 /* NavBar area */
 
-.heading-logo{
+.heading-logo {
     height: 40px;
 }
 
-.endItems > li > a > img {
+.endItems>li>a>img {
     margin-left: 5px;
     height: 25px;
     width: 25px;
@@ -26,51 +25,103 @@
     bottom: 0;
     left: 0;
     background-color: #000;
-    transition: width 1s; 
+    transition: width 1s;
 }
 
 .nav-item-text:hover::after {
-  
+
     width: 100%;
 }
 
-.navbar-toggler > img {
+.navbar-toggler>img {
     height: 30px;
     width: 30px;
 }
+
 .navbar-toggler {
     border: none;
     background-color: transparent;
 }
 
+.navbar {
+    background-color: white !important;
+}
 
 @media (max-width: 576px) {
-    .heading-logo{
+    .heading-logo {
         height: 30px;
     }
-    .endItems > img {
+
+    .endItems>img {
         margin-left: 10px;
         margin-top: 10px;
         height: 30px;
         width: 30px;
     }
+
+
+
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
+
+
+.headSection {
+    background: linear-gradient(to right, #eaecec, #f1f0f0a9);
+    height: 100vh;
+    padding-right: 10px;
+    padding-right: 10px;
+}
+
+.headSection>.container>.row>div>img {
+    height: 350px;
+}
+
+.heading-text { margin: 0; 
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #000;
+   
+}
+
+.heading-subtext {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #000;
+    font-weight: 400;
+ 
+}
+
+.heading-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: none;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+@media (max-width: 768px) {
+    .heading-text {
+        margin-top: 38px;
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+    .headSection>.container>.row>div>img {
+        
+        height: 320px;
+        margin-top: 20px;
     }
 }
 
-.navbar {
-    background: linear-gradient(270deg, rgb(207, 215, 253), rgb(180, 152, 253));
-    background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
+@media (min-width: 768px) {
+    .headSection .col-lg-5.col-md-5.col-sm-12 {
+        text-align: start;
+    }
+
 }
 
